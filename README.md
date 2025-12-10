@@ -5,3 +5,22 @@ By modeling the travel time of each bus on every link as a random variable, we e
 In the first stage, we use a deep neural network with an innovative Kronecker product-based structure to estimate the high-dimensional parameters of the Gaussian mixture distribution (DeepGMM.py).
 
 In the second stage, we perform the conditional forecasting of the distribution of downstream bus link travel times based on partially observed upstream data (Cond-forecast-mixture.py).
+
+## Repository Structure
+
+```
+├── baseline/                    # Baseline models
+│   ├── VAR.py
+│   ├── DeepVAR.py
+│   ├── GARCH.py
+│   ├── GCN-GMM.py
+│   ├── Transformer-GMM.py
+│   └── cond-forecast.py
+│
+├── target_model/                # Proposed model
+│   ├── DeepGMM.py
+│   └── Cond-forecast-mixture.py
+│
+├── README.md                    # Project description
+└── LICENSE                      # License information
+```
