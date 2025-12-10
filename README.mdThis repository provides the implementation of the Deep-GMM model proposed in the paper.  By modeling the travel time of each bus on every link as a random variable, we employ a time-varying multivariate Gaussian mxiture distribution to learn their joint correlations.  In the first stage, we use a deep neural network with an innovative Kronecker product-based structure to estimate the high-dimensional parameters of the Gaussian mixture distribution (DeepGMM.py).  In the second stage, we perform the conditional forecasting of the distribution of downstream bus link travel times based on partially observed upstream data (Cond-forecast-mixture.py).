@@ -1,0 +1,7 @@
+This repository provides the implementation of the Deep-GMM model proposed in the paper.
+
+By modeling the travel time of each bus on every link as a random variable, we employ a time-varying multivariate Gaussian mxiture distribution to learn their joint correlations.
+
+In the first stage, we use a deep neural network with an innovative Kronecker product-based structure to estimate the high-dimensional parameters of the Gaussian mixture distribution (DeepGMM.py).
+
+In the second stage, we perform the conditional forecasting of the distribution of downstream bus link travel times based on partially observed upstream data (Cond-forecast-mixture.py).
