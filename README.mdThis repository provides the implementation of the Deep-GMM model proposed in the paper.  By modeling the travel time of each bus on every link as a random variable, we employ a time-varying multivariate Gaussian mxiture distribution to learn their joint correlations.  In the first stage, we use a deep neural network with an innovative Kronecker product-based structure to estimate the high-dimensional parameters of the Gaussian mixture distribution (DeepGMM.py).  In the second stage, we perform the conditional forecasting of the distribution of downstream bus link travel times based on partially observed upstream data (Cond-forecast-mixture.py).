@@ -1,3 +1,4 @@
+
 This repository provides the implementation of the Deep-GMM model proposed in the paper.
 
 By modeling the travel time of each bus on every link as a random variable, we employ a time-varying multivariate Gaussian mxiture distribution to learn their joint correlations.
